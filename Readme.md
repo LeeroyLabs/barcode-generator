@@ -27,7 +27,7 @@ Initiate the barcode generator for the output you want, then call the ->getBarco
 <?php
 require 'vendor/autoload.php';
 
-// This will output the barcode as HTML output to display in the browser
+// This will output the barcode as SVG with the Text under the code (last argument if true = add text)
 $generator = new Picqer\Barcode\BarcodeGeneratorSVG();
 return $generator->getBarcode('ABC123456789', $generator::TYPE_CODE_128, 2, 110, 'black', true);
 ```
