@@ -15,7 +15,7 @@ It creates SVG, PNG, JPG and HTML images, from the most used 1D barcode standard
 Install through [composer](https://getcomposer.org/doc/00-intro.md):
 
 ```
-composer require picqer/php-barcode-generator
+composer require leeroy/barcode-generator
 ```
 
 If you want to generate PNG or JPG images, you need the GD library or Imagick installed on your system as well.
@@ -28,8 +28,8 @@ Initiate the barcode generator for the output you want, then call the ->getBarco
 require 'vendor/autoload.php';
 
 // This will output the barcode as HTML output to display in the browser
-$generator = new Picqer\Barcode\BarcodeGeneratorHTML();
-echo $generator->getBarcode('081231723897', $generator::TYPE_CODE_128);
+$generator = new Picqer\Barcode\BarcodeGeneratorSVG();
+return $generator->getBarcode('ABC123456789', $generator::TYPE_CODE_128, 2, 110, 'black', true);
 ```
 
 The `getBarcode()` method accepts the following parameters:
