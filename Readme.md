@@ -9,7 +9,7 @@ It creates SVG, PNG, JPG and HTML images, from the most used 1D barcode standard
 
 ## No support for...
 - No support for any **2D** barcodes, like QR codes.
-- We only generate the 'bars' part of a barcode, without text below the barcode. If you want text of the code below the barcode, you could add it later to the output of this package. 
+- We only support value under the barcode for SVG format.
 
 ## Installation
 Install through [composer](https://getcomposer.org/doc/00-intro.md):
